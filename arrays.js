@@ -93,7 +93,6 @@ let inventory = [
       carModelsSorted.push(inventory[i].car_model)
 
     }
-    
   }
   
   console.log(carModels);
@@ -113,11 +112,13 @@ let inventory = [
   
   // ==== Challenge 5 ====
   // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
-  let oldCars = []
+  let oldCars = [];
   for (let i = 0; i < inventory.length; i++){
-    if (inventory[i].car_year) {
-      oldCars.push(inventory[i].car_year > 2000 )
-      console.log(inventory[i].car_year);
+
+    if (inventory[i].car_year < "2000") {
+
+      oldCars.push( +Number(inventory[i].car_year ))
+
     }
     
   }
@@ -128,11 +129,14 @@ let inventory = [
   let BMWAndAudi = [];
   for (let i = 0; i < inventory.length; i++){
 
-    if (inventory[i].car_make) {
-      BMWAndAudi.push(inventory[i].car_make == BMW )
-      BMWAndAudi.push(inventory[i].car_make == Audi)
+    if (inventory[i].car_make =="BMW") {
+      BMWAndAudi.push(inventory[i].car_make )
+
+    }
+    if (inventory[i].car_make =="Audi") {
+      BMWAndAudi.push(inventory[i].car_make)
 
     }
     
   }
-  console.log(BMWAndAudi);
+  console.log(BMWAndAudi.sort());
