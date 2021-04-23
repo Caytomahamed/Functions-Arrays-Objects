@@ -8,10 +8,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b) {
+    console.log(a * b )
   }
 
+multiply(3,5);
 
 /*
 
@@ -25,9 +26,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
+function catYears(age){
+  console.log(63/7)
 }
+catYears();
 
 
 
@@ -47,6 +49,12 @@ console.log("Function was invoked!");
 myFunction();
 ----------------
 
+//-------------- covert ----------------
+*/
+const myfunction = () =>  console.log("was arrow function");
+myfunction();
+
+/*
 let anotherFunction = function (param) {
   return param;
 };
@@ -54,15 +62,24 @@ let anotherFunction = function (param) {
 anotherFunction("Example");
 
 ---------------
+*/
 
+//-------------- covert --------------
+
+ let anotherFunction = (param) => param;
+
+ console.log(anotherFunction("Example"));
+
+/*
 let add = function (param1, param2) {
   return param1 + param2;
 };
 
 add(1,2);
-
 */
+let add = (param1,param2) => param1 + param2
 
+console.log(add(1,2))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: Rock, Paper, Scissors - Let's play against the computer! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -82,9 +99,9 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
 function game(user, computer){
     /*add your code here*/
+    return computer == Math.floor(Math,random()*2)
 }
 
 
