@@ -133,8 +133,8 @@ let inventory = [
       BMWAndAudi.push(inventory[i].car_make )
 
     }
-    if (inventory[i].car_make =="Audi") {
-      BMWAndAudi.push(inventory[i].car_make)
+     if (inventory[i].car_make =="BMW") {
+      BMWAndAudi.push(inventory[i].car_make )
 
     }
     

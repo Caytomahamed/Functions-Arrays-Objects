@@ -99,10 +99,30 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let user;
+let computer;
+let result =Math.floor(Math.random()*3)
+
 function game(user, computer){
     /*add your code here*/
-    return computer == Math.floor(Math,random()*2)
+    if  (computer === 'Scissors' && user === 'paper') {
+      return result ="you lose!"
+    } 
+    else if  (computer === 'paper' && user === 'rock') {
+      return result ="you lose!"
+    } 
+
+    else if  (computer === 'rock' && user === 'Scissors') {
+      return result ="you win!"
+    } else {
+      return result = "it's a tie"
+    }
+
+
 }
+console.log(result);
+
+
 
 
 
